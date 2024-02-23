@@ -40,6 +40,7 @@ namespace RPGraph
         std::fstream edgelist_file(edgelist_path, std::ifstream::in);
 
         std::string line;
+        std::getline(edgelist_file, line); // skip first line
         while(std::getline(edgelist_file, line))
         {
             // Skip any comments
